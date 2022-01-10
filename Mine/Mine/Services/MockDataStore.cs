@@ -14,12 +14,12 @@ namespace Mine.Services
         {
             items = new List<ItemModel>()
             {
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Long Sword", Description="Small increase in attack damage stat.", Value=5 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "B.F Sword", Description="Massive increase in attack damage stat.", Value=50 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Infinty Edge", Description="Increases critical strike damage.", Value = 20 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Blood Thirster", Description="Lifesteal from attacks.", Value = 25 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Edge of Night", Description="Gives a spell-immune shield.", Value = 10 },
+                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Essence Reaver", Description="Gives mana back on attack.", Value = 30 }
             };
         }
 
