@@ -17,6 +17,6 @@ namespace Mine.Models
         public string Description { get; set; }
 
         //The Value of the Item +9 Damage
-        public int value { get; set; } = 0;
+        public int Value { get; set; } = 0;
     }
 }
