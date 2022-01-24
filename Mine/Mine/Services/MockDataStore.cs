@@ -42,7 +42,6 @@ namespace Mine.Services
         {
             var oldItem = items.Where((ItemModel arg) => arg.Id == id).FirstOrDefault();
             items.Remove(oldItem);
-
             return await Task.FromResult(true);
         }
 
@@ -50,6 +49,7 @@ namespace Mine.Services
         {
             return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
         }
+
 
         public async Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
         {
