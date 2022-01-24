@@ -70,7 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -134,18 +134,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_add.png" />
+    <BundleResource Include="icon_add.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_cancel.png" />
+    <BundleResource Include="icon_cancel.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_delete.png" />
+    <BundleResource Include="icon_delete.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_save.png" />
+    <BundleResource Include="icon_save.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\icon_update.png" />
+    <BundleResource Include="icon_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>
