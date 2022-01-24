@@ -5,8 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Mine.Views.ItemIndexPage"
-             Title="{Binding Title}"
-             x:Name="Index">
+             Title="Index"
+             x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddItem_Clicked" IconImageSource="icon_add.png"/>
