@@ -9,11 +9,12 @@ namespace Mine
     public partial class App : Application
     {
 
+
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
+            //Connects the database to the game.
+            DependencyService.Register<DatabaseService>(); 
             MainPage = new MainPage();
         }
 
