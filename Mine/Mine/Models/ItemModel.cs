@@ -1,5 +1,5 @@
 ﻿using System;
-
+using SQLite;
 namespace Mine.Models
 {
     /// <summary>
@@ -8,6 +8,7 @@ namespace Mine.Models
     public class ItemModel
     {
         // The Id for the Item
+        [PrimaryKey]
         public string Id { get; set; }
 
         //The Display Text for the Item
