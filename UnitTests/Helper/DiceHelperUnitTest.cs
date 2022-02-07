@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Mine.Models;
+﻿
 using NUnit.Framework;
 using Mine.Helpers;
 
@@ -63,6 +60,7 @@ namespace UnitTests.Helpers
             Assert.AreEqual(true, result >= 2);
             Assert.AreEqual(true, result <= 12);
         }
+
         [Test]
         public void RollDice_InValid_Roll_0_Dice_10_Should_Return_Zero()
         {
@@ -104,21 +102,6 @@ namespace UnitTests.Helpers
             Assert.AreEqual(5, result);
         }
 
-        [Test]
-        public void RollDice_Valid_Roll_3_Dice_10_Fixed_5_Should_Return_15()
-        {
-            //Arrange 
-            DiceHelper.ForceRollsToNotRandom = true;
-            DiceHelper.ForcedRandomValue = 15;
 
-            //Act 
-            var result = DiceHelper.RollDice(1, 10);
-
-            //Reset
-            DiceHelper.ForceRollsToNotRandom = false;
-
-            //Assert
-            Assert.AreEqual(15, result);
-        }
     }
 }
