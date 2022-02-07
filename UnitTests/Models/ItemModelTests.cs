@@ -5,23 +5,11 @@ using NUnit.Framework;
 using Mine.Models;
 namespace UnitTests.Models
 {
-    //Arrange 
-    //Act
-    //Reset
-    //Assert
+
     [TestFixture]
     public class ItemModelTests
     {
-        /*
-        [Test]
-        public void ItemModel_
-        {
-          //Arrange 
-            //Act
-            //Reset
-            //Assert
-        }
-        */
+
         [Test]
         public void ItemModel_Constructor_Valid_Default_Should_Pass()
         {
