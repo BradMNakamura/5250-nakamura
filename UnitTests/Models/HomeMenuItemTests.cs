@@ -58,7 +58,7 @@ namespace UnitTests.Models
             var result = new HomeMenuItem();
             //Reset
             //Assert
-            Assert.AreEqual(null, result.Id);
+            Assert.AreEqual(MenuItemType.Items, result.Id);
             Assert.AreEqual(null, result.Title);
         }
     }
