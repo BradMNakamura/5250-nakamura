@@ -3,16 +3,25 @@
 namespace Mine.Helpers
 {
 
-
+    /// <summary>
+    /// DiceHelper simulates a dice roll.
+    /// </summary>
     public static class DiceHelper
     {
-
+        //Create a Random object.
         private static Random rnd = new Random();
-
+        //Bool to determine if roll is random
         public static bool ForceRollsToNotRandom = false;
-
+        //Default forced random value.
         public static int ForcedRandomValue = 1;
 
+        /// <summary>
+        /// Take in the amount of times the dice should be rolled and the amount of sided die. 
+        /// Function will add the total based on the rolls and number of sides on the dice.
+        /// </summary>
+        /// <param name="rolls"></param>
+        /// <param name="dice"></param>
+        /// <returns></returns>
         public static int RollDice(int rolls, int dice)
         {
             if (ForceRollsToNotRandom)
