@@ -22,6 +22,7 @@ namespace UnitTests.Models
             //Assert
         }
         */
+        [Test]
         public void ItemModel_Constructor_Valid_Default_Should_Pass()
         {
             // Arrange
