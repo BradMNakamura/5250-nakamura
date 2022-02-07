@@ -12,7 +12,16 @@ namespace UnitTests.Models
     [TestFixture]
     public class ItemModelTests
     {
+        /*
         [Test]
+        public void ItemModel_
+        {
+          //Arrange 
+            //Act
+            //Reset
+            //Assert
+        }
+        */
         public void ItemModel_Constructor_Valid_Default_Should_Pass()
         {
             // Arrange
@@ -43,6 +52,17 @@ namespace UnitTests.Models
             Assert.AreEqual("ID", result.Id);
             Assert.AreEqual("Text", result.Text);
             Assert.AreEqual(1, result.Value);
+        }
+
+        [Test]
+        public void ItemModel_Get_Valid_Default_Should_Pass() 
+        {
+            //Arrange 
+            //Act
+            var result = new ItemModel();
+            //Reset
+            //Assert
+            Assert.AreEqual(0, result.Value);
         }
     }
 }
